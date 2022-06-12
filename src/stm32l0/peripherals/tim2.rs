@@ -1956,29 +1956,27 @@ pub struct RegisterBlock {
     /// TIMx auto-reload register
     pub ARR: RWRegister<u16>,
 
-    _reserved2: [u32; 1],
-    _reserved3: [u16; 1],
+    _reserved2: [u16; 3],
 
     /// capture/compare register
     pub CCR1: RWRegister<u16>,
 
-    _reserved4: [u16; 1],
+    _reserved3: [u16; 1],
 
     /// capture/compare register
     pub CCR2: RWRegister<u16>,
 
-    _reserved5: [u16; 1],
+    _reserved4: [u16; 1],
 
     /// capture/compare register
     pub CCR3: RWRegister<u16>,
 
-    _reserved6: [u16; 1],
+    _reserved5: [u16; 1],
 
     /// capture/compare register
     pub CCR4: RWRegister<u16>,
 
-    _reserved7: [u32; 1],
-    _reserved8: [u16; 1],
+    _reserved6: [u16; 3],
 
     /// DMA control register
     pub DCR: RWRegister<u32>,

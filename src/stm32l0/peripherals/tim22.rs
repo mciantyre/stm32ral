@@ -943,19 +943,17 @@ pub struct RegisterBlock {
     /// auto-reload register
     pub ARR: RWRegister<u16>,
 
-    _reserved3: [u32; 1],
-    _reserved4: [u16; 1],
+    _reserved3: [u16; 3],
 
     /// capture/compare register
     pub CCR1: RWRegister<u16>,
 
-    _reserved5: [u16; 1],
+    _reserved4: [u16; 1],
 
     /// capture/compare register
     pub CCR2: RWRegister<u16>,
 
-    _reserved6: [u32; 5],
-    _reserved7: [u16; 1],
+    _reserved5: [u16; 11],
 
     /// TIM22 option register
     pub OR: RWRegister<u32>,
