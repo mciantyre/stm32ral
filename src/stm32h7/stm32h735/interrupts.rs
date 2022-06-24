@@ -131,7 +131,7 @@ pub union Vector {
 
 #[cfg(feature = "rt")]
 #[doc(hidden)]
-#[link_section = ".vector_table.interrupts"]
+#[cfg_attr(target_arch = "arm", link_section = ".vector_table.interrupts")]
 #[no_mangle]
 pub static __INTERRUPTS: [Vector; 151] = [
     Vector { _handler: WWDG1 },
